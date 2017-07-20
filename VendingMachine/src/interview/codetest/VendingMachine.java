@@ -26,4 +26,10 @@ public class VendingMachine {
 		}
 		return itemsSoldOut;
 	}
+	
+	public boolean buy(Item item, PaymentType paymentType) {
+		PaymentFactory paymentFactory = new PaymentFactory();
+		Payment paymentMode = paymentFactory.getPayment(paymentType);
+		return paymentMode.acceptPayment(item.getPrice());	
+	}
 }

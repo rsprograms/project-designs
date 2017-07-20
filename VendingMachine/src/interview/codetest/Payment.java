@@ -2,6 +2,6 @@ package interview.codetest;
 
 public interface Payment {
 	
-	public boolean acceptPayment();
+	public boolean acceptPayment(Double itemPrice);
 
 }

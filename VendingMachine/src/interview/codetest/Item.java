@@ -5,7 +5,7 @@ public class Item {
 	private int id;
 	private String name;
 	private int quantity;
-	private float price;
+	private Double price;
 	
 	public int getId() {
 		return id;
@@ -28,10 +28,10 @@ public class Item {
 	public void addQuantity(int additionalQuantity) {
 		this.quantity += additionalQuantity;
 	}
-	public float getPrice() {
+	public Double getPrice() {
 		return price;
 	}
-	public void setPrice(float price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 
